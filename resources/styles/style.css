@@ -5,6 +5,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", "Helvetica", sans-serif;
   color: #262626;
 }
 
@@ -14,21 +15,28 @@ a {
   color: inherit;
 }
 
-.container {
-  margin: 0 24px;
-}
-
 
 
 /* Header & Nav */
 header {
+  /* I made this into a fixed header because of the Sign In function. */
+  /* Were this a real website, it'd be very convenient for users to avoid scrolling */
+  width: 100%;
+  background-color: white;
   height: 64px;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
   display: flex;
   align-items: center;
 }
@@ -48,11 +56,13 @@ header .embiggen {
 }
 
 header .light {
+  font-weight: normal;
   color: #a6a6a6;
 }
 
 nav {
   display: flex;
+  padding-right: 24px;
 }
 
 nav a {
@@ -62,7 +72,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #a6a6a6;
+  color: #c9c9c9;
 }
 
 nav.mobile-menu {
@@ -72,11 +82,161 @@ nav.mobile-menu {
 
 
 /* Banner */
+.mainbanner {
+  padding-top: 64px;
+  display: flex;
+  background-color: #d3d3d3;
+  align-items: center;
+}
 
+.mainbanner img {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.mainbanner .text {
+  margin: 0 24px;
+  width: 30%;
+}
+
+.mainbanner h1,
+.mainbanner h3 {
+  font-weight: bold;
+  color: #4b4b4b;
+  padding-bottom: 24px;
+}
+
+.mainbanner h1 {
+  font-size: 3rem;
+}
+
+.mainbanner h3 {
+  font-size: 1.6rem;
+}
+
+.mainbanner a.btn {
+  display: block;
+  background-color: #4b4b4b;
+  color: #f4f4f4;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.mainbanner a:hover {
+  background-color: #989898;
+}
+
+.mainbanner a:active {
+  background-color: #1e1e1e;
+}
 
 
 
 /* News */
+.grid {
+  display: flex;
+  background-color: #f4f4f4;
+  margin: 2px 0; /* This way the border won't touch the divs above and below. A E S T H E T I C */
+}
+
+.grid h1,
+.grid h3,
+.grid span,
+.grid p {
+  color: #585858;
+}
+
+.story a {
+  color: #0093ce;
+
+}
+
+.story a:hover {
+  color: #59cbf9;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+}
+
+.feature h1 {
+  padding: 32px 0 24px 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.feature p {
+  padding-bottom: 32px;
+  font-size: 1.1rem;
+}
+
+.feature span {
+  font-size: 0.9rem;
+}
+
+.column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px #e2e2e2 solid;
+}
+
+.story {
+  padding: 16px;
+  margin: 1px 0;
+  display: flex;
+}
+
+.story:hover {
+  background-color: #dbdbdb;
+}
+
+.story.info {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+}
+
+.story img {
+  width: 35%;
+  height: auto;
+}
+
+.story h3,
+.story span,
+.story a {
+  padding: 8px 0;
+}
+
+.story h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.story.top {
+  border-bottom: 1px #e2e2e2 solid;
+}
+
+.story.center {
+  border-top: 1px #e2e2e2 solid;
+  border-bottom: 1px #e2e2e2 solid;
+}
+
+.story.bottom {
+  border-top: 1px #e2e2e2 solid;
+}
 
 
 
