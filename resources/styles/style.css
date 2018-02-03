@@ -1,0 +1,91 @@
+/* Codecademy Capstone Project 2018 */
+/* Core elements */
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+}
+
+a {
+  /* These changes are mainly because links can get ugly */
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 24px;
+}
+
+
+
+/* Header & Nav */
+header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+header .embiggen {
+  font-weight: bold;
+  color: #262626;
+}
+
+header .light {
+  color: #a6a6a6;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 16px;
+  font-size: 18px;
+  color: #262626;
+}
+
+nav a:hover {
+  color: #a6a6a6;
+}
+
+nav.mobile-menu {
+  display: none;
+}
+
+
+
+/* Banner */
+
+
+
+
+/* News */
+
+
+
+/* Courses */
+
+
+
+/* Thesis */
+
+
+
+/* Footer */
