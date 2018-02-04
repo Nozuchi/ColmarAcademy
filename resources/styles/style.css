@@ -3,9 +3,9 @@
 PALETTE
 very dark     #262626
 dark          #4b4b4b
-intermediate1 #d3d3d3
-intermediate2 #dbdbdb
-light         #a6a6a6
+intermediate1 #a6a6a6
+intermediate2 #d3d3d3
+light         #dbdbdb
 off-white     #f4f4f4
 
 text hi-li    #ababab
@@ -50,6 +50,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+  border-bottom: 1px #dbdbdb solid;
 }
 
 .logo {
@@ -101,6 +102,29 @@ header nav.mobile-menu {
   display: none;
 }
 
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  header nav.menu {
+    display: none;
+  }
+
+  header nav.mobile-menu {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header nav a:hover {
+    opacity: 0.4;
+  }
+}
+
 
 
 /* Banner */
@@ -131,6 +155,7 @@ header nav.mobile-menu {
 
 .mainbanner h1 {
   font-size: 3rem;
+  padding-top: 24px;
 }
 
 .mainbanner h3 {
@@ -144,6 +169,7 @@ header nav.mobile-menu {
   padding: 8px 0;
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .mainbanner a:hover {
@@ -152,6 +178,37 @@ header nav.mobile-menu {
 
 .mainbanner a:active {
   background-color: #1e1e1e;
+}
+
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  .mainbanner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainbanner img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainbanner .text {
+    width: auto;
+  }
+
+  .mainbanner.text {
+    padding: 32px 16px;
+  }
+
+  .mainbanner h1 {
+    padding: 32px 0;
+  }
+
+  .mainbanner h3 {
+    padding: 0 0 24px 0;
+  }
 }
 
 
@@ -172,7 +229,6 @@ header nav.mobile-menu {
 
 .story a {
   color: #0093ce;
-
 }
 
 .story a:hover {
@@ -266,11 +322,59 @@ header nav.mobile-menu {
   border-top: 1px #dbdbdb solid;
 }
 
+.mobile-image {
+  display: none;
+}
+
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  .news-grid {
+    margin: 0;
+  }
+
+  .news-feature {
+    display: none;
+  }
+
+  .news-column {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .image-container {
+    width: auto;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: inline;
+  }
+
+  .story {
+    width: auto;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .story.info {
+    width: auto;
+  }
+
+  .story.top,
+  .story.center,
+  .story.bottom {
+    border: none;
+  }
+}
+
 
 
 /* Courses */
 .course-bg {
-  background-color: #dbdbdb;
+  background-color: #d3d3d3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,6 +430,51 @@ header nav.mobile-menu {
   padding-top: 16px;
 }
 
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  .course-bg {
+    background-color: #f4f4f4;
+    border-top: 1px #dbdbdb solid;
+    border-bottom: 1px #dbdbdb solid;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-bg h1 {
+    padding: 32px 0 16px 0;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .course-grid {
+    padding: 0 16px 24px 16px; /* Only 24 to compensate for margin of .course */
+  }
+
+  .course img,
+  .course.info span,
+  .course.info p {
+    display: none;
+  }
+
+  .course.info {
+    width: auto;
+    padding: 0;
+  }
+
+  .course.info h3 {
+    background-color: #dbdbdb;
+    color: #4b4b4b;
+    padding: 16px;
+  }
+
+  .course:hover h3 {
+    background-color: #ababab;
+  }
+}
+
 
 
 /* Exhibits */
@@ -334,7 +483,6 @@ header nav.mobile-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .exhibit-container {
@@ -404,13 +552,43 @@ header nav.mobile-menu {
 }
 
 .exhibit h3,
-.exhibit p {
+.exhibit p,
+.exhibit a {
   padding: 8px 0;
+}
+
+.exhibit a {
+  color: #0093ce;
+}
+
+.exhibit a:hover {
+  color: #59cbf9;
 }
 
 .exhibit h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  .exhibit-bg h1 {
+    padding: 32px 0 16px 0;
+  }
+
+  .exhibit-feature {
+    width: auto;
+    padding: 0;
+  }
+
+  .exhibit-feature h1,
+  .exhibit-feature p {
+    display: none;
+  }
+
+  .exhibit-column {
+    display: none;
+  }
 }
 
 
@@ -436,4 +614,23 @@ footer nav a {
 
 footer nav a:hover {
   color: #ababab;
+}
+
+/* Tablet & mobile view */
+@media only screen and (max-width: 768px) {
+  footer {
+    height: auto;
+  }
+
+  footer .formatting-footer {
+    padding: 24px 0 0 0;
+  }
+
+  footer span {
+    padding: 16px;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
