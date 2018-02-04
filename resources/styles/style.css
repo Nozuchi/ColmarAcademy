@@ -9,6 +9,7 @@ light         #a6a6a6
 off-white     #f4f4f4
 
 text hi-li    #ababab
+light text    #585858
 
 blue accent   #0093ce
 blue hi-li    #59cbf9
@@ -23,6 +24,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", "Helvetica", sans-serif; /* Yes, it's not the exact font, but it's trendy */
+}
+
+h1, h2, h3, h4, h5, h6, a, span, p {
+  line-height: normal;
 }
 
 a {
@@ -44,7 +49,7 @@ header {
   position: fixed;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px #
+  z-index: 1;
 }
 
 .logo {
@@ -77,22 +82,22 @@ header .light {
   color: #a6a6a6;
 }
 
-nav {
+header nav {
   display: flex;
   padding-right: 24px;
 }
 
-nav a {
+header nav a {
   margin-left: 16px;
   font-size: 18px;
   color: #262626;
 }
 
-nav a:hover {
+header nav a:hover {
   color: #ababab;
 }
 
-nav.mobile-menu {
+header nav.mobile-menu {
   display: none;
 }
 
@@ -174,34 +179,34 @@ nav.mobile-menu {
   color: #59cbf9;
 }
 
-.feature {
+.news-feature {
   display: flex;
   flex-direction: column;
   padding: 32px 24px;
   width: 60%;
 }
 
-.feature img {
+.news-feature img {
   width: 100%;
   height: auto;
 }
 
-.feature h1 {
+.news-feature h1 {
   padding: 32px 0 24px 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.feature p {
+.news-feature p {
   padding-bottom: 32px;
   font-size: 1.1rem;
 }
 
-.feature span {
+.news-feature span {
   font-size: 0.9rem;
 }
 
-.column {
+.news-column {
   width: 40%;
   min-width: 426px;
   display: flex;
@@ -212,7 +217,7 @@ nav.mobile-menu {
 
 .story {
   padding: 16px;
-  margin: 1px 0;
+  margin: 1px 0; /* To put a space between borders */
   display: flex;
   min-height: 100px;
 }
@@ -264,7 +269,7 @@ nav.mobile-menu {
 
 
 /* Courses */
-.courses-bg {
+.course-bg {
   background-color: #dbdbdb;
   display: flex;
   align-items: center;
@@ -272,13 +277,13 @@ nav.mobile-menu {
   flex-direction: column;
 }
 
-.courses-bg h1,
-.courses-bg h3,
-.courses-bg span {
+.course-bg h1,
+.course-bg h3,
+.course-bg span {
   color: #262626;
 }
 
-.courses-bg h1 {
+.course-bg h1 {
   padding: 32px 0;
   font-weight: bold;
   font-size: 2.2rem;
@@ -293,6 +298,12 @@ nav.mobile-menu {
 
 .course {
   width: 30%;
+  background-color: #f4f4f4;
+  margin-bottom: 32px;
+}
+
+.course:hover img {
+  opacity: 0.7; /* User feedback is important */
 }
 
 .course img {
@@ -300,9 +311,129 @@ nav.mobile-menu {
   width: 100%;
 }
 
+.course.info {
+  padding: 16px;
+  width: auto;
+  margin-bottom: 0;
+}
 
-/* Thesis */
+.course.info h3 {
+  font-size: 1.5rem;
+  padding-bottom: 16px;
+}
+
+.course.info p {
+  padding-top: 16px;
+}
+
+
+
+/* Exhibits */
+.exhibit-bg {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.exhibit-container {
+  display: flex;
+}
+
+.exhibit-bg h1,
+.exhibit-bg h3 {
+  color: #262626;
+}
+
+.exhibit-bg p {
+  color: #585858;
+}
+
+.exhibit-bg h1 {
+  padding: 32px 0;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.exhibit-feature {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 32px 24px;
+  width: 60%;
+}
+
+.exhibit-feature video {
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-feature h1 {
+  padding: 32px 0 24px 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.exhibit-feature p {
+  font-size: 1.1rem;
+}
+
+.exhibit-column {
+  width: 40%;
+  min-width: 426px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit {
+  display: flex;
+  padding: 16px;
+  min-height: 100px;
+}
+
+.exhibit:hover {
+  background-color: #dbdbdb;
+}
+
+.exhibit-info {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  padding: 16px;
+}
+
+.exhibit h3,
+.exhibit p {
+  padding: 8px 0;
+}
+
+.exhibit h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 
 
 /* Footer */
+footer {
+  background-color: #f4f4f4;
+  margin: 0 3px; /* Aesthetically pleasing border does not touch sides */
+  height: 72px; /* Just enough space for those with auto-hidden toolbars if it's been raised to still see the bottom */
+  border-top: 1px #dbdbdb solid;
+  font-size: 0.8rem;
+}
+
+footer .formatting-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 21px 0 21px;
+}
+
+footer nav a {
+  margin-left: 16px;
+}
+
+footer nav a:hover {
+  color: #ababab;
+}

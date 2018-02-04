@@ -58,8 +58,8 @@
   <!-- News -->
   <div class="news-grid">
 
-    <!-- The big ol' feature piece, nice and big -->
-    <div class="news feature">
+    <!-- The big ol' feature piece, nice and large -->
+    <div class="news-feature">
       <img src="./resources/images/information-main.jpg" alt="A student outside reading">
       <h1>It doesn't hurt to keep practicing</h1>
       <p>"Curabitur porttitor ligula vel dui semper, ut placerat nulla placerat. Phasellus sollicitudin, nisi non aliquam tempor, nisl augue mollis tellus, nec dictum tellus felis sed odio. Praesent lobortis lacus sit amet ligula placerat bibendum. Nullam eu pellentesque mauris, eu finibus lacus."</p>
@@ -67,7 +67,8 @@
     </div>
 
     <!-- Secondary stories in a column -->
-    <div class="news column">
+    <div class="news-column">
+
       <!-- Story 1 -->
       <div class="story top">
         <div class="image-container">
@@ -110,7 +111,7 @@
 
 
   <!-- Courses -->
-  <div class="courses-bg">
+  <div class="course-bg">
     <h1>Start learning</h1>
 
     <!-- Course grid (housing the six courses available) -->
@@ -118,79 +119,141 @@
 
       <!-- Course #1 -->
       <div class="course">
-        <img src="./resources/images/course-software.jpg" alt="Computer workstation">
-        <div class="course info">
-          <h3>Software Engineering</h3>
-          <span>COURSES</span>
-          <span>Web Development, Mobile Development, iOT, APIs</span>
-        </div>
+        <a href="#"> <!-- Of course, this links to nothing right now, but it would link to an appropriate course page if it wasn't a dummy -->
+          <img src="./resources/images/course-software.jpg" alt="Computer workstation">
+          <div class="course info">
+            <h3>Software Engineering</h3>
+            <span>COURSES</span>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+        </a>
       </div>
 
       <!-- Course #2 -->
       <div class="course">
-        <img src="./resources/images/course-computer-art.jpg" alt="A smartphone">
-        <div class="course info">
-          <h3>Computer Art</h3>
-          <span>COURSES</span>
-          <span>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
-        </div>
+        <a href="#">
+          <img src="./resources/images/course-computer-art.jpg" alt="A smartphone">
+          <div class="course info">
+            <h3>Computer Art</h3>
+            <span>COURSES</span>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
+        </a>
       </div>
 
       <!-- Course #3 -->
       <div class="course">
-        <img src="./resources/images/course-design.jpg" alt="Man holding a camera">
-        <div class="course info">
-          <h3>Design</h3>
-          <span>COURSES</span>
-          <span>User Experience Design, User Research, Visual Design</span>
-        </div>
+        <a href="#">
+          <img src="./resources/images/course-design.jpg" alt="Man holding a camera">
+          <div class="course info">
+            <h3>Design</h3>
+            <span>COURSES</span>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </a>
       </div>
 
       <!-- Course #4 -->
       <div class="course">
-        <img src="./resources/images/course-data.jpg" alt="Laptop displaying information">
-        <div class="course info">
-          <h3>Data</h3>
-          <span>COURSES</span>
-          <span>Data Science, Big Data, SQL, Data Visualization</span>
-        </div>
+        <a href="#">
+          <img src="./resources/images/course-data.jpg" alt="Laptop displaying information">
+          <div class="course info">
+            <h3>Data</h3>
+            <span>COURSES</span>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+        </a>
       </div>
 
       <!-- Course #5 -->
       <div class="course">
-        <img src="./resources/images/course-business.jpg" alt="Chess board with pieces">
-        <div class="course info">
-          <h3>Business</h3>
-          <span>COURSES</span>
-          <span>Product Development, Business Development, Startup</span>
-        </div>
+        <a href="#">
+          <img src="./resources/images/course-business.jpg" alt="Chess board with pieces">
+          <div class="course info">
+            <h3>Business</h3>
+            <span>COURSES</span>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+        </a>
       </div>
 
       <!-- Course #6 -->
       <div class="course">
-        <img src="./resources/images/course-marketing.jpg" alt="Man touching smart watch">
-        <div class="course info">
-          <h3>Marketing</h3>
-          <span>COURSES</span>
-          <span>Analytics, Content Marketing, Mobile Marketing</span>
-        </div>
+        <a href="#">
+          <img src="./resources/images/course-marketing.jpg" alt="Man touching smart watch">
+          <div class="course info">
+            <h3>Marketing</h3>
+            <span>COURSES</span>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </a>
       </div>
 
 
     </div>
-
   </div>
 
 
 
-  <!-- Thesis -->
-  <div>
+  <!-- Exhibits -->
+  <div class="exhibit-bg">
+    <h1>Thesis Exhibit</h1>
+
+    <!-- The theses begin now -->
+    <div class="exhibit-container">
+
+      <!-- Featured exhibit -->
+      <div class=exhibit-feature>
+        <video src="./resources/videos/thesis.mp4" controls="yes" loop="yes">A highrise apartment with a cubist design</video>
+        <h1>Reimagine urban</h1>
+        <p>"Cras eget quam lorem. Suspendisse sollicitudin tincidunt dictum. Morbi non egestas quam. Ut vehicula malesuada mauris, ac consectetur mauris aliquam quis. Vivamus sed ultricies lectus, et pellentesque quam."</p>
+      </div>
+
+      <!-- Columnized smaller links -->
+      <div class="exhibit-column">
+
+        <!-- Small exhibit 1 -->
+        <div class="exhibit">
+          <div class="image-container">
+            <img src="./resources/images/thesis-fisma.jpg" alt="A student highlighting design documents">
+          </div>
+          <div class="exhibit-info">
+            <h3>Fisma: Design and Prototype</h3>
+            <p>Designer showcase of new prototype product</p>
+          </div>
+        </div>
+
+        <!-- Small exhibit 2 -->
+        <div class="exhibit">
+          <div class="image-container">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="The cityscape of New York">
+          </div>
+          <div class="exhibit-info">
+            <h3>Now and then</h3>
+            <p>Research about New York</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 
 
 
   <!-- Footer -->
   <footer>
+    <div class="formatting-footer">
+      <span>&copy; 2018 Colmar Academy: All rights reserved</span>
+
+      <!-- Footer Links -->
+      <nav>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </nav>
+
+    </div>
   </footer>
 
 
