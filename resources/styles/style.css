@@ -1,12 +1,28 @@
-/* Codecademy Capstone Project 2018 */
+/* Codecademy Capstone Project 2018
+
+PALETTE
+very dark     #262626
+dark          #4b4b4b
+intermediate1 #d3d3d3
+intermediate2 #dbdbdb
+light         #a6a6a6
+off-white     #f4f4f4
+
+text hi-li    #ababab
+
+blue accent   #0093ce
+blue hi-li    #59cbf9
+*/
+
+
 /* Core elements */
-html {
+
+body {
   font-family: "Helvetica", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", "Helvetica", sans-serif;
-  color: #262626;
+  font-family: "Roboto", "Helvetica", sans-serif; /* Yes, it's not the exact font, but it's trendy */
 }
 
 a {
@@ -22,12 +38,13 @@ header {
   /* I made this into a fixed header because of the Sign In function. */
   /* Were this a real website, it'd be very convenient for users to avoid scrolling */
   width: 100%;
-  background-color: white;
+  background-color: #f4f4f4;
   height: 64px;
   display: flex;
   position: fixed;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px #
 }
 
 .logo {
@@ -72,7 +89,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #c9c9c9;
+  color: #ababab;
 }
 
 nav.mobile-menu {
@@ -125,7 +142,7 @@ nav.mobile-menu {
 }
 
 .mainbanner a:hover {
-  background-color: #989898;
+  background-color: #ababab;
 }
 
 .mainbanner a:active {
@@ -135,16 +152,16 @@ nav.mobile-menu {
 
 
 /* News */
-.grid {
+.news-grid {
   display: flex;
   background-color: #f4f4f4;
   margin: 2px 0; /* This way the border won't touch the divs above and below. A E S T H E T I C */
 }
 
-.grid h1,
-.grid h3,
-.grid span,
-.grid p {
+.news-grid h1,
+.news-grid h3,
+.news-grid span,
+.news-grid p {
   color: #585858;
 }
 
@@ -186,16 +203,18 @@ nav.mobile-menu {
 
 .column {
   width: 40%;
+  min-width: 426px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px #e2e2e2 solid;
+  border-left: 1px #dbdbdb solid;
 }
 
 .story {
   padding: 16px;
   margin: 1px 0;
   display: flex;
+  min-height: 100px;
 }
 
 .story:hover {
@@ -209,8 +228,12 @@ nav.mobile-menu {
   justify-content: center;
 }
 
-.story img {
+.image-container {
   width: 35%;
+}
+
+.image-container img {
+  width: 100%;
   height: auto;
 }
 
@@ -226,22 +249,56 @@ nav.mobile-menu {
 }
 
 .story.top {
-  border-bottom: 1px #e2e2e2 solid;
+  border-bottom: 1px #dbdbdb solid;
 }
 
 .story.center {
-  border-top: 1px #e2e2e2 solid;
-  border-bottom: 1px #e2e2e2 solid;
+  border-top: 1px #dbdbdb solid;
+  border-bottom: 1px #dbdbdb solid;
 }
 
 .story.bottom {
-  border-top: 1px #e2e2e2 solid;
+  border-top: 1px #dbdbdb solid;
 }
 
 
 
 /* Courses */
+.courses-bg {
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.courses-bg h1,
+.courses-bg h3,
+.courses-bg span {
+  color: #262626;
+}
+
+.courses-bg h1 {
+  padding: 32px 0;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.course-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 72px;
+}
+
+.course {
+  width: 30%;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
 
 
 /* Thesis */
